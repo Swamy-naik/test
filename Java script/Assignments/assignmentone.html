@@ -1,0 +1,55 @@
+<html>
+<head>
+<title>Java script</title>
+</head>
+<body>
+	<script>
+	
+	function wallet(balance,name)
+	{
+		function deposit(amount)
+		{   
+			balance=balance+amount;
+			alert("Deposit amount.."+amount+" in "+name+" New Balance : "+balance);
+			
+		}
+		function withdrawn(amount)
+		{   
+			if(amount>balance)
+			{
+				alert("Can't be Withdrawn");
+			}
+			else
+			{	
+				balance=balance-amount;
+				alert("withdrawn amount.."+amount+" from "+ name+" New Balance : "+balance);
+				
+			}
+			
+		}
+		function send(amount,toperson)
+		{   
+			withdrawn(amount);
+			toperson[0](amount);
+		}
+		function show(amount)
+		{   
+			alert("Final Balance : "+balance+" of "+name);
+		}
+		return [deposit,withdrawn,show,send];
+	}
+	p1=wallet(1000,"mithlesh");
+	p1[0](200);
+	p1[1](300);
+	p1[2]();
+	p2=wallet(1000,"Vivek");
+	p2[0](500);
+	p2[1](100);
+	p2[2]();
+	p1[3](100,p2);
+	p1[2]();
+	p2[2]();
+
+	</script>
+</body>
+</html>

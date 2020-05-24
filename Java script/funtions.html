@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>Java script</title>
+</head>
+<body>
+	<script>
+	
+	function sayhell()
+	{
+		alert("Hello bhailog.!");
+		alert("first: "+arguments[0]);
+		alert("second: "+arguments[1]);
+		alert("third: "+arguments[2]);
+	}
+	function sayhello(name1,name2)
+	{
+		alert("Bro.. "+name1+" and "+name2);
+	}
+	function say(name1,name2)
+	{
+		return("Noice "+name1+" and "+name2);
+	}
+	sayhell("Vivek","Mithlesh","jay");<!--Hello bhailog.!h-->
+	sayhello("Vivek","Mithlesh","jay");<!--Bro.. Vivek and Mithlesh-->
+	sayhello("vivek");<!--Bro.. vivek and undefined-->
+	data=say("Vivek","Mithlesh");
+	alert("Message, "+data);
+	alert(typeof sayhell);<!--data type =function-->
+	test=sayhell;<!--Refering to same function-->
+	alert(typeof test);<!--function-->
+	test();<!--Hello bhailog.!h-->
+	</script>
+</body>
+</html>

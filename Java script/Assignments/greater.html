@@ -1,0 +1,73 @@
+<html>
+<head>
+<title>Assignments</title>
+</head>
+<body>
+	<script>
+	function great()
+	{
+	a=prompt("Enter 1st  num");
+	b=prompt("Enter 2nd  num");
+	c=prompt("Enter 3rd  num");
+	greatest=a > b ? (a > c ? a : c) : (b > c ? b : c); 
+	alert("Greatest Number"+greatest);
+	}
+	function mark()
+	{
+		a=prompt("Enter Mark");
+		if(a>80 && a<=100)
+		{
+			alert("First");
+		}
+		else if(a>60 && a<=79)
+		{
+			alert("second");
+		}
+		else if(a>40 && a<=59)
+		{
+			alert("Third");
+		}
+		else
+		{
+		alert("FAIL");
+		}
+	
+	}
+	function leap()
+	{   
+		year=prompt("Enter Year to check");
+	        if(year % 4 == 0)
+	        {
+	            if( year % 100 == 0)
+	            {
+	                if ( year % 400 == 0)
+	                    alert("TRUE");
+	                else
+	                    alert("FALSE");
+	            }
+	            else
+	                alert("TRUE");
+	        }
+	        else
+	            alert("FALSE");
+	        
+	
+	}
+	choice=prompt("Enter 1 for greatest and 2 for marks 3 for leap year");
+	if(choice==1)
+	{
+		great();
+	}
+	else if(choice==2)
+	{
+		mark();
+	}
+	else if(choice==3)
+	{
+		leap();
+	}
+	
+	
+	</script>
+</body>
+</html>

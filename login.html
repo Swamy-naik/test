@@ -1,0 +1,94 @@
+<html>
+	<head>
+	<title>SAB KUCH</title>
+	</head>
+	<body>
+	<!-- by default method="get"-->
+	<!-- change method="post"  for security n hide in url -->
+	<!-- action="register.jsp" for submitting result in any file-->
+		<form method="post" name="register" ><!--action="register.jsp"-->
+		Username:<input type="text" name="uname"/>
+		<!-- to disable ,use disabled-->
+				<input type="checkbox" name="skills" checked/>JAVA<br>
+		Password:<input type="password" name="pssd"/><br>
+		Gender:<input type="radio" name="gender"/>Male
+				<input type="radio" name="gender"/>Female<br>
+		Skills:<br><input type="checkbox" name=""/>Python<br>
+		<!-- to precheck,use checked,,but you can change it in dynamic -->
+				<input type="checkbox" name="skills" checked/>JAVA<br>
+				<input type="checkbox" name="skills"/>C++<br>
+				<input type="checkbox" name="skills"/>HTML<br>
+				<input type="checkbox" name="skills"/>RUBY<br>
+		Location:
+		<select name="location">
+		<!-- to preregister use registered,but you can change it in dynamic  -->
+		<option value="CHD" registered>Chandigarh</option>
+		<option value="DHL">Delhi</option>
+		<option value="RK">Roorkee</option>
+		</select><br>
+		About me:<textarea rows="10" cols="50" style="background-image:url(images/two.jpg);color:white">
+		</textarea><br>
+		<fieldset>
+		<legend>sahi hah boss</legend> <!-- for in line box name -->
+		<h1>Hello,kaisan ba?</h1>
+		<hr/> <!-- for horizontal line -->
+		<h2>Mast Ba.<h2/>
+			<fieldset>
+			<legend>sahi hah boss</legend> <!-- for in line box name -->
+			<h3>Hello,aur tum?</h3>
+			<hr/> <!-- for horizontal line -->
+			<h4>hum bhi Mast hah<h4/>
+			</fieldset>
+		<ul type ="cicle">
+		<li>A</li>
+		<li>B</li>
+		<li>C</li>
+		<li>D</li>
+		</ul>
+		<ol type ="number">
+		<li>A</li>
+		<li>B</li>
+		<li>C</li>
+		<li>D</li>
+		</ol>
+		</fieldset>
+		<table border="1"
+				cellpadding="10px"
+				cellspacing="10px"
+				align="center">
+			<thead>
+			<tr>
+				<th>Type name</th>
+				<th>Example</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td alien="center" colspan="2">
+					Essential components</td></tr>
+				<tr>
+					<td>Planet</td>
+					<td>Dharti Maa</td>
+				</tr>
+				<tr>
+					<td>Ocean</td>
+					<td>Samudra</td>
+				</tr>
+				<tr>
+					<td>Desert</td>
+					<td rowspan="2">mitti</td>
+				</tr>
+				<tr>
+					<td>Sahara</td>
+					
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<input type="Submit"
+				name="submit"
+					value="submit"/>
+		
+		</form>
+	</body>
+</html>

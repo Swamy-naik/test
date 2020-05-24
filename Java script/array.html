@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>ARRAY</title>
+</head>
+<body>
+	<script>
+	//array
+	arr=[1,"hello",null,true];
+	arr.push("okay");//add last
+	alert("Removing...last.."+arr.pop());
+	arr.unshift("vivek");//adding front
+	alert(arr);
+	alert("Removing...first.."+arr.shift());
+	alert(arr);
+	alert(arr[0]);
+	alert(arr[1]);
+	alert(arr[2]);
+	alert(arr[3]);
+	for(var i=0;i<arr.length;i++)
+	{
+		alert(arr[i]);
+	}
+	//key value pair
+	obj={	
+		fname:"sachin",
+		lname:"vivek",
+		city:"RK"
+	}
+	alert(obj["fname"]);
+	alert(obj.fname);
+	for(k in obj)
+	{
+		alert(k+" VALUE : "+obj[k]);
+	}
+	</script>
+</body>
+</html>

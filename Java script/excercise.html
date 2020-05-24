@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Java script</title>
+</head>
+<body>
+	<script>
+	
+	function out()
+	{
+		var count=0;
+		
+		function inn()
+		{   count=count+1;
+			alert("Calling count..."+count);
+		}
+		return inn;
+	}
+	var c=out();
+	c();
+	c();
+	c();
+	c();
+	d=out(); //on finishing execution all its local var are deleted and recreated on calling
+	c();
+	c();
+	c();
+	c();//1,2,3,4,5,6,7,8
+	d(); //will maintian its own count 1,2,3,4
+	d();
+	d();
+	d();
+	
+	
+	</script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Java script</title>
+</head>
+<body
+	<h1>Hello world!</h1>
+	<p>these are coversions.</p>
+	<script>
+	a=true+true+99+99+"hello"+99+99+true+true;
+	alert(typeof a);<!-- String -->
+	alert(a);<!-- 200hello9999truetrue -->
+	a="1";
+	data="12.3hello456";
+	str='';
+	str1=null;
+	ab=0;
+	b="2";
+	h=20;
+	j=10;
+	c=h%j;
+	w=true;
+	q=true;
+	e=false;
+	alert(typeof (w-q));<!-- Number -->
+	alert(w+q);<!-- Number =0 -->
+	alert(typeof c);<!-- Number -->
+	alert(c);<!-- Number =0 -->
+	c=h-j;
+	alert(typeof c);<!-- Number -->
+	alert(c);<!-- Number =-1 -->
+	k=parseFloat(data);<!-- parseInt(data)=12;-->
+	alert(typeof k);<!-- Number -->
+	alert(k);<!-- 12.3 -->
+	alert(Number(data));<!-- NAN -->
+	alert(isNaN(Number(data)))<!-- True -->
+	alert(typeof Number(data));<!-- Number -->
+	alert(a+b);<!-- 12 -->
+	alert(Number(a)+Number(b));<!-- 3 -->
+	c=1;
+	d=2;
+	e=false;
+	alert(a.toString()+b.toString());<!-- 12 -->
+	alert(typeof e.toString());<!-- String -->
+	alert(Boolean(a));<!-- True -->
+	alert(Boolean(ab));<!--False-->
+	alert(Boolean(str));<!--False,because length is 0,else all true-->
+	alert(Boolean(null));<!-- False,null object -->
+	a="10";
+	b=true;
+	c=a+b;
+	alert(typeof c);
+	alert(typeof c);
+	alert(str1.toString());<!-- TypeError:'toString' of null -->
+	
+	</script>
+</body>
+</html>

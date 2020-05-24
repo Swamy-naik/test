@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Java script</title>
+</head>
+<body>
+	<script>
+	function outer()
+	{
+		alert("this is outer");
+		function inner()
+		{
+			alert("this is inner");
+		}
+		return inner;
+	}
+	test=outer();
+	alert(typeof test);
+	test();
+	function sayhi()
+	{
+		alert("Hello bhailog.!");<!--Hello bhailog.!h-->
+	}
+	function caller(a)
+	{
+		alert(typeof a);
+	}
+	caller(sayhi());<!--Undefined-->
+	caller(sayhi);<!--Refrence of sayhi is passed then only functional programming-->
+	function sayhello(name)
+	{
+		alert("Hello "+name);<!--Hello bhailog.!h-->
+	}
+	function calling(a,b)
+	{
+		alert(typeof a);
+		sayhello(b);
+	}
+	calling(sayhello,"myki");
+	calling(sayhello(),"vivek");
+	</script>
+</body>
+</html>

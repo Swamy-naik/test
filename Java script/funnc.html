@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Java script</title>
+</head>
+<body>
+	<script>
+	function inner()
+	{
+		data=" Hello mith!";
+	}
+	inner();
+	alert(data);<!--"Hello myki!"-->
+	/*
+	function outer()
+	{
+		var koo="Hello myki!";
+		<!-- use var to create local keyboard.-->
+	}
+	outer();
+	alert(koo);<!--data is not defined,as it is locally-->
+	*/
+	function out()
+	{
+		var d="outerrrr";
+		function inn()
+		{
+			alert("Yess i can access local var :"+d);
+		}
+		inn();
+	}
+	out();
+	function A()
+	{
+		var d=" i am A";
+		function B()
+		{
+			alert("Yess i can access local var :"+d);
+		}
+		return B;
+	}
+	var c=A();
+	c();
+	c();
+	</script>
+</body>
+</html>
